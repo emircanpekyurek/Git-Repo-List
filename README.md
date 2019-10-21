@@ -68,7 +68,7 @@ open class BasePresenter<T : BaseContact.View> : BaseContact.Presenter<T> {
 
 }
 ```
-#### Other Activity
+### Other Activity
 ```kotlin
 class SearchRepoActivity :
     BaseActivity<SearchRepoContact.View, SearchRepoContact.Presenter>(), SearchRepoContact.View,
@@ -82,7 +82,7 @@ class SearchRepoActivity :
 ```
 
 # SQL Helper
-#### Create Sql
+### Create Sql
 ```kotlin
 open class DatabaseCreator(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
@@ -108,7 +108,7 @@ open class DatabaseCreator(context: Context) :
     }
 }
 ```
-#### Database Transactions
+### Database Transactions
 ```kotlin
 object DatabaseHelper : DatabaseCreator(GitApplication.instance) {
 
@@ -153,7 +153,7 @@ object DatabaseHelper : DatabaseCreator(GitApplication.instance) {
 
 
 # Base Request
-####ApiResponse
+### ApiResponse
 ```kotlin
 interface ApiResponse<T> {
     fun onSuccessResponse(response: T)
@@ -161,7 +161,7 @@ interface ApiResponse<T> {
 }
 ```
 
-#### Request
+### Request
 ```kotlin
 fun <T> disposable(observable: Observable<Response<T>>, apiResponse: ApiResponse<T>): Disposable =
         observable
