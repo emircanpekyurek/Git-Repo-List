@@ -14,9 +14,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".ui.repo_detail.RepoDetailActivity"
-            android:configChanges="orientation"/>
+            android:configChanges="orientation|screenSize"/>
         <activity android:name=".ui.search_repo.SearchRepoActivity"
-            android:configChanges="orientation"
+            android:configChanges="orientation|screenSize"
             android:label="@string/home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
