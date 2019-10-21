@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    tools:context=".ui.repo_detail.RepoDetailActivity">
+
+    <ImageView
+        android:id="@+id/ivUserImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivUserImage"
+        app:layout_constraintTop_toTopOf="@id/ivUserImage" />
+
+    <TextView
+        android:id="@+id/tvRepoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+
+    <TextView
+        android:id="@+id/tvStarTitle"
+        style="@style/RepoDetailTitleStyle"
+        android:layout_marginTop="@dimen/activity_padding"
+        android:text="@string/stars_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUserImage" />
+
+    <TextView
+        android:id="@+id/tvStarCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvStarTitle"
+        app:layout_constraintStart_toEndOf="@id/tvStarTitle" />
+
+    <TextView
+        android:id="@+id/tvOpenIssuesTitle"
+        style="@style/RepoDetailTitleStyle"
+        android:layout_marginTop="@dimen/activity_padding"
+        android:text="@string/open_issues_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStarTitle" />
+
+    <TextView
+        android:id="@+id/tvOpenIssuesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvOpenIssuesTitle"
+        app:layout_constraintStart_toEndOf="@id/tvOpenIssuesTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

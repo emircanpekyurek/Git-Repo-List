@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GitHubRepoList</string>
+
+    <string name="home">Home</string>
+
+    <!--BaseActivity-->
+    <string name="database_error">Database Error</string>
+
+    <!--SearchRepoActivity-->
+    <string name="no_result_found">No result found</string>
+    <string name="fill_in_the_blanks">Fill in the blanks</string>
+
+    <!--activity_repo_detail.xml-->
+    <string name="stars_title">Stars:</string>
+    <string name="open_issues_title">Open Issues:</string>
+
+    <!--activity_search_repo-xml-->
+    <string name="submit">Submit</string>
+    <string name="username">Username</string>
+
+    <!--menu_repo_detail.xml-->
+    <string name="star">Star</string>
+</resources>
