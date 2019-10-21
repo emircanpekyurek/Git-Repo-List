@@ -30,7 +30,7 @@ abstract class BaseActivity<V : BaseContact.View, P : BaseContact.Presenter<V>> 
     abstract val view: V
     private var loadingDialog: LoadingDialog? = null
 
-	@CallSuper
+    @CallSuper
     open fun onActivityReady(savedInstanceState: Bundle?) {
     }
 
@@ -99,8 +99,8 @@ open class DatabaseCreator(context: Context) :
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         if (oldVersion != newVersion) {
             dropTable(db, FavoriteTable.TABLE_NAME)
+	    onCreate(db)
         }
-        onCreate(db)
     }
 
     private fun dropTable(db: SQLiteDatabase?, tableName: String) {
